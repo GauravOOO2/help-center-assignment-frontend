@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+##### Here's the updated README file for Help Center API Assignment:
+---
 
-First, run the development server:
+# Help Center API Assignment
+
+### Description
+
+The Help Center Cards API is a service designed to manage 'Help Center' cards, allowing users to effortlessly create and read cards to provide information or raise doubts. 
+
+It provides functionalities such as form submissions and search capabilities to enhance user interaction and management of help center content.
+
+---
+
+## Technology Stack
+
+- **Next.js:** Used for the frontend application to interact with the API, including form submissions and displaying search results.
+- **MongoDB:** Provides a NoSQL database to store and manage 'Help Center' card data.
+- **Node.js:** Used as the runtime environment for building the server-side application.
+- **Express:** Serves as the web application framework to handle HTTP requests and responses, and manage API routes.
+- **Tailwind CSS:** A utility-first CSS framework for building custom designs quickly.
+- **CORS:** Configured to handle cross-origin requests between the frontend and backend.
+
+---
+
+
+## Run Locally
+
+
+#### Clone the project from github
+
+
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/GauravOOO2/help-center-assignment.git
+```
+**Back End:**
+
+Navigate to the BackEnd Directory:
+
+```bash
+  cd help-center-assignment/BackEnd
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+  npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Set Environment Variables:
 
-## Learn More
+Create a ".env" file in the backend directory and add the following:
+```bash
+MONGO_URI=<your-mongodb-connection-string>
+PORT=5000
 
-To learn more about Next.js, take a look at the following resources:
+```
+Start the BackEnd server 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  node server.js
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Front End:**
 
-## Deploy on Vercel
+Navigate to the Front End Directory:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+  cd help-center-assignment/my-help-center
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Set Environment Variables:
+
+Create a .env file in the frontend directory and add the following:
+
+```bash
+NEXT_PUBLIC_BACKEND_URL="http://localhost:5000/api"
+
+```
+Run the Application 
+
+```bash
+  npm run dev
+```
+### Note: Please add your MongoDB link in the .env folder at the place "MONGO_URI="
+
+## Built by
+
+This project is built by [J.Gaurav Varma](https://github.com/GauravOOO2).
+
+ThankYou. 
+---
